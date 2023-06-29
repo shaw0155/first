@@ -7,8 +7,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 import { Menu } from "antd";
 import {
-  MailOutlined,
-  SettingOutlined,
+
   MenuUnfoldOutlined,
   MenuFoldOutlined,
 } from "@ant-design/icons";
