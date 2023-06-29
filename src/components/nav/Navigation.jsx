@@ -10,7 +10,7 @@ const workflowItems = [
   {
     key: "1",
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="#">
+      <a target="_blank" rel="noopener noreferrer" href="#a">
         1st menu item
       </a>
     ),
@@ -18,7 +18,7 @@ const workflowItems = [
   {
     key: "2",
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="#">
+      <a target="_blank" rel="noopener noreferrer" href="#a">
         2nd menu item
       </a>
     ),
@@ -49,15 +49,15 @@ export default function Navigation() {
     <div className="nav-bar">
       <h1>Logo</h1>
       <div className="nav-links">
-        <a href="#">{t("nav_home")}</a>
+        <a href="#a">{t("nav_home")}</a>
 
-        <a href="#">{t("nav_services")}</a>
+        <a href="#a">{t("nav_services")}</a>
         <Dropdown
           menu={{
             items: workflowItems,
           }}
         >
-          <a onClick={(e) => e.preventDefault()}>
+          <a href="#a" onClick={(e) => e.preventDefault()}>
             <Space>
               {t("nav_workflow")}
               <DownOutlined />
@@ -65,8 +65,8 @@ export default function Navigation() {
           </a>
         </Dropdown>
 
-        <a href="#">{t("nav_careers")}</a>
-        <a href="#">{t("nav_contact")}</a>
+        <a href="#a">{t("nav_careers")}</a>
+        <a href="#a">{t("nav_contact")}</a>
       </div>
 
       <Select
